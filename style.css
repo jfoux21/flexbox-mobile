@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0px;
+}
+
+.logo > img {
+  width: 50px;
+}
+
+.navbar {
+  background-color:grey;
+  padding-bottom: 10px white;
+  width: 100%;
+  height: auto;
+}
+
+.hamburger {
+  color:white;
+  display: block;
+  float: right;
+  padding: 05px;
+  height: auto;
+  width: auto;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  color: white;
+  justify-content: flex-end;
+}
+
+li {
+  display: inline-block;
+  margin: 15px;
+}
+
+.product-apple {
+  border: 5px solid grey;
+  padding: 5px;
+  border-width: thin;
+  text-align: center;
+  flex: 1;
+  margin: 3px;
+}
+
+.product-B {
+  border: 5px solid grey;
+  padding: 5px;
+  border-width: thin;
+  text-align: center;
+  flex: 1;
+  margin: 3px;
+}
+
+.product-C {
+  border: 5px solid grey;
+  padding: 5px;
+  border-width: thin;
+  text-align: center;
+  flex: 1;
+  margin: 3px;
+}
+
+footer {
+  border-top: 2px solid grey;
+  display: flex;
+  margin: 5px;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  padding: 20px;
+  margin: 10px;
+}
+
+header {
+  display: flex;
+}
+
+@media screen and (min-width: 300px) {
+  header {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  main {
+    flex-direction:column;
+  }
+
+    .hamburger {
+    color:white;
+    float: right;
+    padding: 05px;
+    position: relative;
+    font-size: 30px;
+  }
+
+  .menu {
+    visibility: hidden;
+  }
+
+}
+
+@media screen and (min-width: 480px) {
+  header {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .logo {
+    padding-right: 80px;
+    padding-left: 100px;
+    align-items: center;
+    display: flex;
+  }
+
+  main {
+    flex-direction:column;
+  }
+
+}
+
+@media screen and (min-width: 800px) {
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  flex-direction: row;
+}
+
+.menu {
+    display: flex;
+    visibility: visible
+  }
+
+.hamburger {
+  display: none;
+}
+
+header {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  }
+
+}
